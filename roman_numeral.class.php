@@ -27,7 +27,7 @@ class converter implements RomanNumeralGenerator{
     } 
 function generate($integer) 
 {         
-    if($integer>3999)     // If entered value is over 3999 then quit;
+    if($integer<1 || $integer>3999)     // If entered value is over 3999 then quit;
     return false;
     $string = '';         // Start with an empty string; 
     while($integer > 0)   // A loop to run until 'entered value'  become zero;     
